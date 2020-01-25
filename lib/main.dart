@@ -1,4 +1,4 @@
-import 'features/news/pages/homepage.dart';
+import 'features/news/pages/home.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(NewsApp());
