@@ -14,3 +14,7 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+
+Widget getNews(){
+  
+}
