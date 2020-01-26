@@ -1,4 +1,5 @@
-import 'features/news/pages/home.dart';
+import 'package:Newstand/features/news/pages/launch_screen.dart';
+// import 'features/news/pages/home.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(NewsApp());
@@ -11,7 +12,7 @@ class NewsApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: SafeArea(
-          child: HomePage()
+          child: Launch()
           ),
       )
     );
