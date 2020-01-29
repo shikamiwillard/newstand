@@ -32,6 +32,8 @@ bewellapp_keystore.jks.encrypted
 bewellapp_keystore.jks
 /android/key.properties
 /ios/Flutter
+/build/ios
+/build/flutter
 
 
 # Web related
