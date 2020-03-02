@@ -31,9 +31,6 @@
 bewellapp_keystore.jks.encrypted
 bewellapp_keystore.jks
 /android/key.properties
-/ios/Flutter
-/build/ios
-/build/flutter
 
 
 # Web related
@@ -49,6 +46,15 @@ lib/generated_plugin_registrant.dart
 **/android/debug_key.properties
 **/android/**/GeneratedPluginRegistrant.java
 **/android/debug_key.properties
+
+#iOS Related
+/ios/976SPS3FV4.cer
+/ios/AppStore_com.savannah.bewell.mobileprovision
+/ios/Default-568h@2x.png
+/ios/Runner.app.dSYM.zip
+/ios/Runner.ipa
+/ios/Flutter
+/ios/build/
 
 # iOS/XCode related
 **/ios/**/*.mode1v3
