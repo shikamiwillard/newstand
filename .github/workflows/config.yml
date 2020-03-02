@@ -5,37 +5,32 @@ on : [push]
 jobs:
   run-unit-and-widget-tests:
     name: Run unit and widget tests
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: actions/setup-java@v1
-        with:
-          java-package: jre
-          java-version: '8.0.242'
-      - uses: actions/setup-python@v1
-        with:
-          python-version: '3.8'
       - uses: subosito/flutter-action@v1
         with:
-          channel: 'beta'
           flutter-version: '1.14.6'
+          channel: 'beta'
       - name: Run setup flutter and run tests
         run: |            
-            flutter upgrade && flutter config --no-analytics
-            flutter --version 
-            flutter config --enable-web
             flutter pub get            
             flutter analyze
-            flutter test --coverage -j 1 test/
-            flutter test -j 1 test/web_test/
-      - name: Run retrieve coverage information    
-        run: |
-          sudo apt-get -qq update
-          sudo apt-get install -qqy lcov
-          pip install --upgrade pip
-          pip install -Uqqq lxml && pip install -Uqqq beautifulsoup4
-          genhtml -q -o coverage coverage/lcov.info  
-          python check_coverage.py
+            flutter test --coverage
+      # - name: Upload coverage to Codecov
+      #   uses: codecov/codecov-action@v1
+      #   with:
+      #     token: ${{ secrets.CODECOV_TOKEN }}
+      #     file: coverage/lcov.info
+      # - name: Run retrieve coverage information    
+      #   run: |
+      #     sudo apt-get -qq update
+      #     sudo apt-get install -qqy lcov
+      #     pip install --upgrade pip
+      #     pip install -Uqqq lxml && pip install -Uqqq beautifulsoup4
+      #     genhtml -q -o coverage coverage/lcov.info  
+      #     python check_coverage.py
+
 
   # run-driver-tests:
   #   name: Run driver tests

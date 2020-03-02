@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "984517045711",
+    "firebase_url": "https://newstand-app.firebaseio.com",
+    "project_id": "newstand-app",
+    "storage_bucket": "newstand-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984517045711:android:052e1739268f0a19f576ba",
+        "android_client_info": {
+          "package_name": "com.potters.newstand"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "984517045711-75rqdu1h2g9vjsoa3adcvvvnlakgd8u5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcstq9ZvO0OP_zdiSYzOQXIR3nG4lyLj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "984517045711-75rqdu1h2g9vjsoa3adcvvvnlakgd8u5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

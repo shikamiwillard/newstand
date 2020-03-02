@@ -1,4 +1,4 @@
-import 'package:Newstand/features/news/pages/launch_screen.dart';
+import 'package:newstand/features/launch_screen/launch_screen.dart';
 // import 'features/news/pages/home.dart';
 import 'package:flutter/material.dart';
 
